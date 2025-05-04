@@ -5,14 +5,14 @@
 }
 
 :root {
-    --primario: #fff;
-    background: linear-gradient(to right, rgb(236, 175, 248), rgb(252, 120, 149));
+    --primario: #000000;
+    background: linear-gradient(to right, rgb(248, 175, 175), rgba(184, 29, 76, 0.692));
     --fondo-sobre: #ffe3ed; 
-    --solapa-sobre: #ffccd5; 
-    --cuerpo-sobre: #ffc1d1; 
-    --sombra: rgba(250, 24, 62, 0.5);
-    --texto: #003049; 
-    --corazon: #ff477e; 
+    --solapa-sobre: #ffffff;
+    --cuerpo-sobre:  rgb(231, 233, 231); 
+    --sombra: rgb(226, 99, 120);
+    --texto: #ffffff; 
+    --corazon: #ce3b3b; 
 }
 
 body {
@@ -29,7 +29,7 @@ h1 {
     text-align: center;
     font-size: 60px;
     margin-bottom: 50px;
-    color: #444;
+    color: #ffffff;
 }
 
 .contenedor {
@@ -177,30 +177,7 @@ h1 {
     pointer-events: none;
 }
 
-/*Scroll personalizado*/
 
-/*
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--cuerpo-sobre);
-    border-radius: 4px;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--corazon);
-}
-*/
-
-/*Vista celular*/
 
 @media screen and (max-width:400px) {
     .contenedor {
