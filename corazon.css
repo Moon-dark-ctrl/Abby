@@ -1,0 +1,65 @@
+body{
+padding: 0px;
+margin: 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #000000;
+min-height: 100vh; /*Porcentaje de altura*/
+}
+.contenido{
+    position: fixed;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.audio{
+    position: fixed;
+    text-align: center;
+    margin-top: 60vh;
+}
+
+h2{
+    color: white;
+}
+.corazon{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    position: relative; /*permite posicionar un elemento en relación a su posición normal en el flujo del documento. Esto significa que el elemento se desplazará desde su posición inicial, pero el resto del contenido seguirá siendo afectado como si el elemento estuviera en su posición original. */
+    transform: rotate(135deg);/*Possion que se  va rotar deg es en grados*/
+    box-shadow: -20px 20px 150px red;
+    animation: palpitar 0.5s linear infinite alternate;
+
+}
+
+@keyframes palpitar{
+    /*Animaciones*/
+    0%{transform: rotate(135deg) scale(1.10);}
+    80%{transform: rotate(135deg) scale(1.0);}
+    100%{transform: rotate(135deg) scale(0.8);}
+}
+
+.corazon::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    right: 50%; /*se usa para controlar la posición horizontal de un elemento que está posicionado*/
+    border-radius: 50%;
+    box-shadow: -20px 20px 150px red;
+}
+
+
+.corazon::after{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    top: 50%;
+    border-radius: 50%;
+    box-shadow: -20px 20px 150px red;
+}
+
