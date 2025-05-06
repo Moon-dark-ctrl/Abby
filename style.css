@@ -31,7 +31,9 @@ h1 {
     margin-bottom: 50px;
     color: #ffffff;
 }
-
+a{
+    text-decoration:none;
+}
 .contenedor {
     width: 400px;
 }
